@@ -15,19 +15,19 @@ export default function () {
           Ils nous font confiance
         </h1>
         <div className=" justify-center items-center gap-10 py-10 px-10 md:px20 md:flex ">
-          <div className="flex gap-10">
+          <div className="flex gap-10 justify-center items-center">
             <Image
               src={h241}
               alt="Picture of the author"
-              className="h-16 w-32"
+              className="h-16 w-20"
             />
             <Image
               src={cnx}
               alt="Picture of the author"
-              className="h-16 w-32"
+              className="h-14 w-28"
             />
           </div>
-          <div className="flex gap-10 py-10">
+          <div className="flex gap-10 py-10 justify-center items-center">
             <Image
               src={samba}
               alt="Picture of the author"
@@ -36,19 +36,19 @@ export default function () {
             <Image
               src={community}
               alt="Picture of the author"
-              className="h-16 w-32"
+              className="h-24 w-28"
             />
           </div>
-          <div className="flex gap-10">
+          <div className="flex gap-10 justify-center items-center">
             <Image
               src={dengui}
               alt="Picture of the author"
-              className="h-16 w-32"
+              className="h-14 w-32"
             />
             <Image
               src={safrimat}
               alt="Picture of the author"
-              className="h-16 w-32"
+              className="h-32 w-32"
             />
           </div>
         </div>
