@@ -11,7 +11,7 @@ export default function () {
   return (
     <>
       <div className="py-10 px-10 md:px20">
-        <h1 className="text-4xl font-bold text-center">
+        <h1 className="text-3xl font-bold text-center  md:text-4xl">
           Ils nous font confiance
         </h1>
         <div className=" justify-center items-center gap-10 py-10 px-10 md:px20 md:flex ">

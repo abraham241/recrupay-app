@@ -26,7 +26,7 @@ export default function Hiro() {
           <button className="bg-green-800 md:px-4 md:py-2 rounded-full text-white p-3 ">
             Essayez une démo
           </button>
-          <button className="bg-white rounded-full text-green-800 border-2 hover:bg-gray-100 p-2 flex gap-2 ">
+          <button className="bg-white rounded-full text-green-800 border-2 hover:bg-gray-100 p-2 flex gap-2 justify-center items-center ">
             <span className="text-green-800">
               <Play />
             </span>

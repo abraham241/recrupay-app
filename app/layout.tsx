@@ -4,6 +4,8 @@ import "./globals.css";
 import Nav from "./components/Nav";
 import Hiro from "./components/Hiro";
 import Partenaire from "./components/Partenaire";
+import Propos from "./components/Propos";
+import Choix from "./components/Choix";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,6 +37,8 @@ export default function RootLayout({
         {children}
         <Hiro />
         <Partenaire />
+        <Propos/>
+        <Choix/>
       </body>
     </html>
   );
