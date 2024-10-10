@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "./components/Nav";
 import Hiro from "./components/Hiro";
+import Partenaire from "./components/Partenaire";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Nav />
         {children}
         <Hiro />
+        <Partenaire />
       </body>
     </html>
   );

@@ -5,9 +5,9 @@ import { Play } from "lucide-react";
 export default function Hiro() {
   return (
     <>
-      <div className=" py-20 px-10 md:px20">
+      <div className=" pt-24 px-10 md:px20">
         <div>
-          <h1 className="text-5xl font-bold text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-center">
             Le logiciel qu’il vous faut pour <br />
             gérer <span className="inline-block mb-2">vos</span>{" "}
             {/* Ajout d'une marge en bas pour espacer */}

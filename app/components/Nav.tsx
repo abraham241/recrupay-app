@@ -27,7 +27,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="w-full  px-20 bg-white shadow">
+      <nav className="w-full fixed  px-8 mb:px20 bg-white shadow">
         <div className="flex justify-between items-center h-20">
           {/* Logo visible sur toutes les tailles d'écran */}
           <div className="h-20 w-32 flex justify-center items-center">
@@ -56,19 +56,25 @@ export default function Nav() {
                     href="/sub-menu-1"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
-                    Sub Menu 1
+                    Gestion de recrutement
                   </Link>
                   <Link
                     href="/sub-menu-2"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
-                    Sub Menu 2
+                    Gestion des formations
                   </Link>
                   <Link
                     href="/sub-menu-3"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
-                    Sub Menu 3
+                    L.M.S
+                  </Link>
+                  <Link
+                    href="/sub-menu-3"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                  >
+                    Social média
                   </Link>
                 </div>
               )}
@@ -114,24 +120,30 @@ export default function Nav() {
                 Modules
               </button>
               {isDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 z-10">
+                <div className="absolute right-0 mt-2 w-64 bg-white shadow-lg rounded-lg py-2 z-10">
                   <Link
                     href="/sub-menu-1"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
-                    Sub Menu 1
+                    Gestion de recrutement
                   </Link>
                   <Link
                     href="/sub-menu-2"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
-                    Sub Menu 2
+                    Gestion des formations
                   </Link>
                   <Link
                     href="/sub-menu-3"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
-                    Sub Menu 3
+                    L.M.S
+                  </Link>
+                  <Link
+                    href="/sub-menu-3"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                  >
+                    Social-media
                   </Link>
                 </div>
               )}
