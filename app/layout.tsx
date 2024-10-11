@@ -6,6 +6,7 @@ import Hiro from "./components/Hiro";
 import Partenaire from "./components/Partenaire";
 import Propos from "./components/Propos";
 import Choix from "./components/Choix";
+import Tarif from "./components/Tarif";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,8 +38,9 @@ export default function RootLayout({
         {children}
         <Hiro />
         <Partenaire />
-        <Propos/>
-        <Choix/>
+        <Propos />
+        <Choix />
+        <Tarif />
       </body>
     </html>
   );

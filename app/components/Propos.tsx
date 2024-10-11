@@ -78,7 +78,7 @@ export default function Propos() {
 
           {/* Image */}
           <div className="image flex flex-col md:justify-end w-full md:w-4/5 mt-10 md:mt-0">
-            <Image src={propos} alt="" className=" md:h-[500px] md:w-[800px]" />
+            <Image src={propos} alt="" className=" md:h-[700px] md:w-[800px]" />
           </div>
         </div>
       </div>
