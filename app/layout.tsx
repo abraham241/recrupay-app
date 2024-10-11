@@ -7,6 +7,7 @@ import Partenaire from "./components/Partenaire";
 import Propos from "./components/Propos";
 import Choix from "./components/Choix";
 import Tarif from "./components/Tarif";
+import Action from "./components/Action";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -41,6 +42,7 @@ export default function RootLayout({
         <Propos />
         <Choix />
         <Tarif />
+        <Action />
       </body>
     </html>
   );

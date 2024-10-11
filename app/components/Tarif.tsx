@@ -4,7 +4,7 @@ import { CircleCheck } from "lucide-react";
 export default function Tarif() {
   return (
     <>
-      <div className="p-10 ">
+      <div className="md:px-20 py-10 px-10">
         <div className="bg-gray-900 p-5 rounded-3xl">
           <div className="text-white text-center flex flex-col justify-center items-center my-5">
             <h1 className="text-3xl md:text-4xl font-bold">
@@ -14,7 +14,7 @@ export default function Tarif() {
               Quelle que soit la taille de votre entreprise, notre logiciel
               fonctionnera bien pour vous.
             </p>
-            <p className="bg-white p-3 w-2/3 rounded-lg font-bold text-green-800 text-xl">
+            <p className="bg-white p-3 w-2/3 rounded-lg font-bold text-green-800 md:text-xl text-sm ">
               Prennez une démo gratuitement en fonction de la taille de votre
               entreprise
             </p>
