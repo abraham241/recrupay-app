@@ -5,7 +5,7 @@ import { Play } from "lucide-react";
 export default function Hiro() {
   return (
     <>
-      <div className=" pt-24 px-10 md:px20">
+      <div className=" pt-36 px-10 md:px20">
         <div>
           <h1 className="text-4xl md:text-5xl font-bold text-center">
             Le logiciel qu’il vous faut pour <br />
@@ -23,15 +23,15 @@ export default function Hiro() {
           </p>
         </div>
         <div className="flex justify-center items-center gap-5">
-          <button className="bg-green-800 md:px-4 md:py-2 rounded-full text-white p-3 ">
+          <Button className="bg-green-800 md:px-4 md:py-2 rounded-full text-white p-3 ">
             Essayez une démo
-          </button>
-          <button className="bg-white rounded-full text-green-800 border-2 hover:bg-gray-100 p-2 flex gap-2 justify-center items-center ">
+          </Button>
+          <Button className="bg-white rounded-full text-green-800 border-2 hover:bg-gray-100 p-2 flex gap-2 justify-center items-center ">
             <span className="text-green-800">
               <Play />
             </span>
             Voir la video
-          </button>
+          </Button>
         </div>
       </div>
     </>

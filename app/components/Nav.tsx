@@ -19,15 +19,16 @@ export default function Nav() {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  // Liens du menu modifiés pour être des ancres vers les sections de la page
   const menuItems = [
-    { label: "A propos", href: "/" },
-    { label: "Nos tarifs", href: "/" },
-    { label: "FAQ", href: "/" },
+    { label: "A propos", href: "#propos" },
+    { label: "Nos tarifs", href: "#tarifs" },
+    { label: "FAQ", href: "#faq" },
   ];
 
   return (
     <>
-      <nav className="w-full fixed  px-8 mb:px20 bg-white shadow">
+      <nav className="w-full fixed px-8 mb:px-20 bg-white shadow">
         <div className="flex justify-between items-center h-20">
           {/* Logo visible sur toutes les tailles d'écran */}
           <div className="h-20 w-32 flex justify-center items-center">
@@ -37,7 +38,12 @@ export default function Nav() {
           {/* Liens déplacés à côté du logo (visible uniquement sur desktop) */}
           <div className="hidden md:flex space-x-4 pr-36">
             {menuItems.map((item, index) => (
-              <Link key={index} href={item.href} className="font-bold">
+              <Link
+                key={index}
+                href={item.href}
+                className="font-bold"
+                scroll={false}
+              >
                 {item.label}
               </Link>
             ))}
@@ -53,25 +59,25 @@ export default function Nav() {
               {isDropdownOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 z-10">
                   <Link
-                    href="/sub-menu-1"
+                    href="#recrutement"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
                     Gestion de recrutement
                   </Link>
                   <Link
-                    href="/sub-menu-2"
+                    href="#formations"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
                     Gestion des formations
                   </Link>
                   <Link
-                    href="/sub-menu-3"
+                    href="#lms"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
                     L.M.S
                   </Link>
                   <Link
-                    href="/sub-menu-3"
+                    href="#social-media"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
                     Social média
@@ -122,25 +128,25 @@ export default function Nav() {
               {isDropdownOpen && (
                 <div className="absolute right-0 mt-2 w-64 bg-white shadow-lg rounded-lg py-2 z-10">
                   <Link
-                    href="/sub-menu-1"
+                    href="#recrutement"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
                     Gestion de recrutement
                   </Link>
                   <Link
-                    href="/sub-menu-2"
+                    href="#formations"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
                     Gestion des formations
                   </Link>
                   <Link
-                    href="/sub-menu-3"
+                    href="#lms"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
                     L.M.S
                   </Link>
                   <Link
-                    href="/sub-menu-3"
+                    href="#social-media"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
                     Social-media

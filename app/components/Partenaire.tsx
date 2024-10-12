@@ -14,7 +14,7 @@ export default function () {
         <h1 className="text-3xl font-bold text-center  md:text-4xl">
           Ils nous font confiance
         </h1>
-        <div className=" justify-center items-center gap-10 py-10 px-10 md:px20 md:flex ">
+        <div className=" justify-center items-center gap-10  px-10 md:px20 md:flex ">
           <div className="flex gap-10 justify-center items-center">
             <Image
               src={h241}

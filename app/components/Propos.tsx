@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import propos from "@/public/images/propos.jpeg";
-
 export default function Propos() {
   return (
     <>
-      <div className="bg-green-800 md:px-20 px-10">
+      <div className="bg-green-800 md:px-20 px-10" id="propos">
         {/* Titre */}
         <div className="text-white text-center py-5 ">
           <h1 className="text-3xl md:text-4xl font-bold py-5">
@@ -69,8 +68,8 @@ export default function Propos() {
               </p>
             </div>
 
-            <div className="w-full md:w-[550px] py-3">
-              <button className="flex justify-start bg-white rounded-full p-3 text-green-800 font-bold">
+            <div className=" py-3  group p-10 rounded text-left w-full md:w-[550px]">
+              <button className="flex justify-start bg-white rounded-full p-3 my-5 text-green-800 font-bold">
                 Essayez, c’est gratuit
               </button>
             </div>
