@@ -45,15 +45,13 @@ export default function Fouter() {
               </Link>
             </li>
             <li className="py-1">
-              <Link href="/" className="flex items-center gap-2">
-                <MapPin />
-                Libreville/ Gabon
-              </Link>
+              <MapPin />
+              <p>Libreville/ Gabon</p>
             </li>
             <li className="py-1">
               <Link href="/" className="flex items-center gap-2">
                 <Mail />
-                Une tarification simple, pour tous.
+                recrupay@gmail.com
               </Link>
             </li>
           </ul>
