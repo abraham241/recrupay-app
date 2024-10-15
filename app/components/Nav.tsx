@@ -38,7 +38,7 @@ export default function Nav() {
           </div>
 
           {/* Liens déplacés à côté du logo (visible uniquement sur desktop) */}
-          <div className="hidden md:flex space-x-4 pr-36">
+          <div className="hidden md:flex space-x-4 pr-36 md:pr-96">
             {menuItems.map((item, index) => (
               <Link
                 key={index}
@@ -91,7 +91,11 @@ export default function Nav() {
 
           {/* Bouton "Démo gratuite" visible seulement sur mobile */}
           <div className="md:hidden">
-            <Button className="bg-green-800 rounded-full">Démo gratuite</Button>
+            <Link href="formulaire">
+              <Button className="bg-green-800 rounded-full">
+                Démo gratuite
+              </Button>
+            </Link>
           </div>
 
           {/* Boutons à droite (desktop uniquement) */}
@@ -164,9 +168,11 @@ export default function Nav() {
             </div>
 
             {/* Boutons dans le menu mobile */}
-            <Button variant="outline" className="block w-full">
-              Se connecter
-            </Button>
+            <Link href="connexion">
+              <Button variant="outline" className="block w-full">
+                Se connecter
+              </Button>
+            </Link>
           </div>
         )}
       </nav>

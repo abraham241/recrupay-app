@@ -21,7 +21,7 @@ export default function Fouter() {
           <h4 className="pb-2 text-xl font-bold">Liens utils</h4>
           <ul>
             <li className="py-1">
-              <Link href="/">Ce que recruPay vous permet de faire</Link>
+              <Link href="propos">Ce que recruPay vous permet de faire</Link>
             </li>
             <li className="py-1">
               <Link href="/">
@@ -41,13 +41,13 @@ export default function Fouter() {
             <li className="py-1">
               <Link href="/" className="flex items-center gap-2">
                 <Phone />
-                Ce que recruPay vous permet de faire
+                (+241) 77-80-88-64
               </Link>
             </li>
             <li className="py-1">
               <Link href="/" className="flex items-center gap-2">
                 <MapPin />
-                Pourquoi choisir recruPay pour votre entreprise
+                Libreville/ Gabon
               </Link>
             </li>
             <li className="py-1">
@@ -60,9 +60,11 @@ export default function Fouter() {
 
           {/* Demo Button */}
           <div className="py-4">
-            <Button className="bg-white text-green-800">
-              Commander une démo
-            </Button>
+            <Link href="formulaire">
+              <Button className="bg-white text-green-800">
+                Demander une démo
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
