@@ -10,7 +10,7 @@ export default function Page() {
       <div className="min-h-screen flex flex-col">
         {/* Navbar */}
         <nav className="h-20 bg-green-800 flex justify-center items-center">
-          <Link key="" href="#home">
+          <Link key="" href="/">
             <Image src={recrlogo} alt="Recrulogo" className="h-16 w-32 p-3" />
           </Link>
         </nav>

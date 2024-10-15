@@ -1,4 +1,6 @@
+"use client";
 import Nav from "./components/Nav";
+import { useState } from "react";
 import Fouter from "./components/Fouter";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
@@ -19,6 +21,13 @@ import {
 } from "@/components/ui/accordion";
 
 export default function Home() {
+  const [currentImage, setCurrentImage] = useState(h241); // Initialiser avec une image par défaut
+
+  // Fonction pour changer l'image en fonction du survol
+  const handleMouseEnter = (image) => {
+    setCurrentImage(image);
+  };
+
   return (
     <>
       <Nav />
@@ -103,7 +112,7 @@ export default function Home() {
       {/*  */}
 
       {/*  */}
-      <div className="scroll-margin bg-green-800 md:px-20 px-10" id="propos">
+      <div className=" scroll-margin bg-green-800 md:px-20 px-10" id="propos">
         {/* Titre */}
         <div className="text-white text-center py-5 ">
           <h1 className="text-3xl md:text-4xl font-bold py-5">
@@ -116,21 +125,27 @@ export default function Home() {
         </div>
 
         {/* Slider + Image */}
-        <div className="flex flex-col md:flex-row justify-center items-center py-16 text-right">
-          {/* Contenu */}
+        <div className="flex-col md:flex-row md:flex justify-between gap-20 py-16 ">
           <div className="ensemble flex flex-col md:justify-end md:items-end md:w-3/5 w-full">
-            <div className="hover:bg-white group py-3 p-10 rounded text-left w-full md:w-[550px]">
+            <div
+              className="hover:bg-white group py-3 p-10 rounded text-left w-full md:w-[550px]"
+              onMouseEnter={() => handleMouseEnter(h241)} // Changer l'image au survol
+            >
               <h1 className="text-2xl font-bold text-white group-hover:text-green-800 pb-2">
                 Gestion de recrutement
               </h1>
               <p className="text-white group-hover:text-black">
                 Un logiciel tout-en-un qui simplifie la gestion des talents afin
-                de <br /> suivre les candidatures de manière fluide et intuitive
+                de
+                <br /> suivre les candidatures de manière fluide et intuitive
                 avec notre <br /> module de Gestion de Recrutement.
               </p>
             </div>
 
-            <div className="hover:bg-white group py-4 p-10 rounded text-left w-full md:w-[550px]">
+            <div
+              className="hover:bg-white group py-4 p-10 rounded text-left w-full md:w-[550px]"
+              onMouseEnter={() => handleMouseEnter(propos)} // Changer l'image au survol
+            >
               <h1 className="text-2xl font-bold text-white group-hover:text-green-800 pb-2">
                 Gestion des formations
               </h1>
@@ -143,7 +158,10 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="hover:bg-white group py-4 p-10 rounded text-left w-full md:w-[550px]">
+            <div
+              className="hover:bg-white group py-4 p-10 rounded text-left w-full md:w-[550px]"
+              onMouseEnter={() => handleMouseEnter(safrimat)} // Changer l'image au survol
+            >
               <h1 className="text-2xl font-bold text-white group-hover:text-green-800">
                 Réseau social interne
               </h1>
@@ -155,7 +173,10 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="hover:bg-white group py-4 p-10 rounded text-left w-full md:w-[550px]">
+            <div
+              className="hover:bg-white group py-4 p-10 rounded text-left w-full md:w-[550px]"
+              onMouseEnter={() => handleMouseEnter(samba)} // Changer l'image au survol
+            >
               <h1 className="text-2xl font-bold text-white group-hover:text-green-800">
                 Messagerie instantanée
               </h1>
@@ -167,7 +188,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className=" py-3  group p-10 rounded text-left w-full md:w-[550px]">
+            <div className="py-3 group p-10 rounded text-left w-full md:w-[550px]">
               <Link href="formulaire">
                 <button className="flex justify-start bg-white rounded-full p-3 my-5 text-green-800 font-bold">
                   Essayez, c’est gratuit
@@ -177,8 +198,12 @@ export default function Home() {
           </div>
 
           {/* Image */}
-          <div className="image flex flex-col md:justify-end w-full md:w-4/5 mt-10 md:mt-0">
-            <Image src={propos} alt="" className=" md:h-[700px] md:w-[800px]" />
+          <div className="image  md:justify-end w-full md:w-4/5 mt-10 md:mt-0">
+            <Image
+              src={currentImage} // Affiche l'image actuellement survolée
+              alt=""
+              className="md:h-[700px] md:w-[800px]"
+            />
           </div>
         </div>
       </div>

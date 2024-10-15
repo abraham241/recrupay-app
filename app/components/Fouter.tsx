@@ -44,14 +44,14 @@ export default function Fouter() {
                 (+241) 77-80-88-64
               </Link>
             </li>
-            <li className="py-1">
+            <li className="py-1 flex items-center gap-2">
               <MapPin />
               <p>Libreville/ Gabon</p>
             </li>
             <li className="py-1">
               <Link href="/" className="flex items-center gap-2">
                 <Mail />
-                recrupay@gmail.com
+                contact@samba-tech.ga
               </Link>
             </li>
           </ul>
