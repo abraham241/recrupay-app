@@ -68,6 +68,16 @@ body {
   }
 }
 
+.scroll-margin {
+  scroll-margin-top: 100px; /* Ajuste la hauteur en fonction de la taille du menu sur desktop */
+}
+
+@media (max-width: 768px) {
+  .scroll-margin {
+    scroll-margin-top: 60px; /* Ajuste pour les tailles d'écran plus petites (mobile) */
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

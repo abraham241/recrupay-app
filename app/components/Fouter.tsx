@@ -13,7 +13,7 @@ export default function Fouter() {
       <div className="bg-green-800 flex flex-wrap py-10 px-5 md:px-10 lg:px-20 justify-between">
         {/* Logo Section */}
         <div className="flex justify-center items-center w-full md:w-1/3 mb-6 md:mb-0">
-          <Image src={recrulogo} alt="Recrulogo" className="h-20 w-32" />
+          <Image src={recrulogo} alt="logo" className="h-20 w-32 mr-64" />
         </div>
 
         {/* Liens utils Section */}
@@ -27,9 +27,6 @@ export default function Fouter() {
               <Link href="/">
                 Pourquoi choisir recruPay pour votre entreprise
               </Link>
-            </li>
-            <li className="py-1">
-              <Link href="/">Une tarification simple, pour tous.</Link>
             </li>
             <li className="py-1">
               <Link href="/">Questions fréquentes</Link>

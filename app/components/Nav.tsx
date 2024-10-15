@@ -22,7 +22,7 @@ export default function Nav() {
   // Liens du menu modifiés pour être des ancres vers les sections de la page
   const menuItems = [
     { label: "A propos", href: "#propos" },
-    { label: "Nos tarifs", href: "#tarifs" },
+    // { label: "Nos tarifs", href: "#tarifs" },
     { label: "FAQ", href: "#faq" },
   ];
 
@@ -32,7 +32,9 @@ export default function Nav() {
         <div className="flex justify-between items-center h-20">
           {/* Logo visible sur toutes les tailles d'écran */}
           <div className="h-20 w-32 flex justify-center items-center">
-            <Image src={recrulogo} alt="Recrulogo" />
+            <Link key="" href="#home">
+              <Image src={recrulogo} alt="Recrulogo" />
+            </Link>
           </div>
 
           {/* Liens déplacés à côté du logo (visible uniquement sur desktop) */}
@@ -41,7 +43,7 @@ export default function Nav() {
               <Link
                 key={index}
                 href={item.href}
-                className="font-bold"
+                className="font-bold scroll-margin"
                 scroll={false}
               >
                 {item.label}
@@ -94,10 +96,16 @@ export default function Nav() {
 
           {/* Boutons à droite (desktop uniquement) */}
           <div className="hidden md:flex space-x-4">
-            <Button variant="outline" className=" rounded-full">
-              Se connecter
-            </Button>
-            <Button className="bg-green-800 rounded-full">Démo gratuite</Button>
+            <Link href="connexion">
+              <Button variant="outline" className="block w-full rounded-full">
+                Se connecter
+              </Button>
+            </Link>
+            <Link href="formulaire">
+              <Button className="bg-green-800 rounded-full">
+                Démo gratuite
+              </Button>
+            </Link>
           </div>
 
           {/* Bouton mobile (menu burger) visible seulement sur mobile */}
