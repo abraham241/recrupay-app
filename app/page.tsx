@@ -11,6 +11,10 @@ import community from "@/public/images/community.png";
 import dengui from "@/public/images/dengui.png";
 import safrimat from "@/public/images/safrimat.png";
 import samba from "@/public/images/samba.png";
+import Dashboard6 from "@/public/images/Dashboard6.png";
+import Dashboard5 from "@/public/images/Dashboard5.png";
+import Dashboard3 from "@/public/images/Dashboard3.png";
+import Dashboard4 from "@/public/images/Dashboard4.png";
 import propos from "@/public/images/propos.jpeg";
 import Link from "next/link";
 import {
@@ -75,24 +79,24 @@ export default function Home() {
             <Image
               src={h241}
               alt="Picture of the author"
-              className="h-16 w-20"
+              className="h-20 w-24"
             />
             <Image
               src={cnx}
               alt="Picture of the author"
-              className="h-14 w-28"
+              className="h-14 w-32  "
             />
           </div>
           <div className="flex gap-10 py-10 justify-center items-center">
             <Image
               src={samba}
               alt="Picture of the author"
-              className="h-16 w-32"
+              className="h-24 w-36"
             />
             <Image
               src={community}
               alt="Picture of the author"
-              className="h-24 w-28"
+              className="h-32 w-32"
             />
           </div>
           <div className="flex gap-10 justify-center items-center">
@@ -104,7 +108,7 @@ export default function Home() {
             <Image
               src={safrimat}
               alt="Picture of the author"
-              className="h-32 w-32"
+              className="h-40 w-36"
             />
           </div>
         </div>
@@ -129,7 +133,7 @@ export default function Home() {
           <div className="ensemble flex flex-col md:justify-end md:items-end md:w-3/5 w-full">
             <div
               className="hover:bg-white group py-3 p-10 rounded text-left w-full md:w-[550px]"
-              onMouseEnter={() => handleMouseEnter(h241)} // Changer l'image au survol
+              onMouseEnter={() => handleMouseEnter(Dashboard5)} // Changer l'image au survol
             >
               <h1 className="text-2xl font-bold text-white group-hover:text-green-800 pb-2">
                 Gestion de recrutement
@@ -144,7 +148,7 @@ export default function Home() {
 
             <div
               className="hover:bg-white group py-4 p-10 rounded text-left w-full md:w-[550px]"
-              onMouseEnter={() => handleMouseEnter(propos)} // Changer l'image au survol
+              onMouseEnter={() => handleMouseEnter(Dashboard4)} // Changer l'image au survol
             >
               <h1 className="text-2xl font-bold text-white group-hover:text-green-800 pb-2">
                 Gestion des formations
@@ -160,7 +164,7 @@ export default function Home() {
 
             <div
               className="hover:bg-white group py-4 p-10 rounded text-left w-full md:w-[550px]"
-              onMouseEnter={() => handleMouseEnter(safrimat)} // Changer l'image au survol
+              onMouseEnter={() => handleMouseEnter(Dashboard3)} // Changer l'image au survol
             >
               <h1 className="text-2xl font-bold text-white group-hover:text-green-800">
                 Réseau social interne
@@ -175,7 +179,7 @@ export default function Home() {
 
             <div
               className="hover:bg-white group py-4 p-10 rounded text-left w-full md:w-[550px]"
-              onMouseEnter={() => handleMouseEnter(samba)} // Changer l'image au survol
+              onMouseEnter={() => handleMouseEnter(Dashboard6)} // Changer l'image au survol
             >
               <h1 className="text-2xl font-bold text-white group-hover:text-green-800">
                 Messagerie instantanée
@@ -198,11 +202,11 @@ export default function Home() {
           </div>
 
           {/* Image */}
-          <div className="image  md:justify-end w-full md:w-4/5 mt-10 md:mt-0">
+          <div className="image  md:justify-end w-full md:w-4/5  md:mt-0 z-0">
             <Image
               src={currentImage} // Affiche l'image actuellement survolée
               alt=""
-              className="md:h-[700px] md:w-[800px]"
+              className="filter blur-[1px]"
             />
           </div>
         </div>
@@ -231,7 +235,7 @@ export default function Home() {
               <p>01</p>
             </div>
             <div className="text-xl font-bold py-2">
-              <h1>Automatisation des processus</h1>
+              <h1>Automatisation des recrutements</h1>
             </div>
             <div>
               <p>
@@ -293,7 +297,7 @@ export default function Home() {
             avantages de notre <br /> solution. Aucun engagement nécessaire.
           </p>
           <Link href="formulaire">
-            <Button className="bg-white text-green-800">
+            <Button className="bg-white text-green-800 hover:bg-slate-200">
               Inscrivez-vous pour une version d'essai gratuite
             </Button>
           </Link>

@@ -59,7 +59,7 @@ export default function Fouter() {
           {/* Demo Button */}
           <div className="py-4">
             <Link href="formulaire">
-              <Button className="bg-white text-green-800">
+              <Button className="bg-white text-green-800 hover:bg-slate-200">
                 Demander une démo
               </Button>
             </Link>
