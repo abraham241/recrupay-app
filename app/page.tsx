@@ -28,7 +28,7 @@ export default function Home() {
   const [currentImage, setCurrentImage] = useState(h241); // Initialiser avec une image par défaut
 
   // Fonction pour changer l'image en fonction du survol
-  const handleMouseEnter = (image) => {
+  const handleMouseEnter = (image:any) => {
     setCurrentImage(image);
   };
 
