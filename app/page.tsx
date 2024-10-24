@@ -28,7 +28,7 @@ export default function Home() {
   const [currentImage, setCurrentImage] = useState(h241); // Initialiser avec une image par défaut
 
   // Fonction pour changer l'image en fonction du survol
-  const handleMouseEnter = (image:any) => {
+  const handleMouseEnter = (image: any) => {
     setCurrentImage(image);
   };
 
@@ -49,8 +49,7 @@ export default function Home() {
           <p className="text-center py-5">
             Un logiciel tout-en-un qui simplifie la gestion des talents,
             améliore la collaboration et <br /> permet de suivre le rythme dans
-            un environnement toujours plus compétitif. <br /> Révolutionnez la
-            formation et le recrutement de votre entreprise.
+            un environnement toujours plus compétitif. <br />
           </p>
         </div>
         <div className="flex justify-center items-center gap-5">
