@@ -182,13 +182,13 @@ export default function Home() {
               onMouseEnter={() => handleMouseEnter(Dashboard6)} // Changer l'image au survol
             >
               <h1 className="text-2xl font-bold text-white group-hover:text-green-800">
-                Messagerie instantanée
+                Publiez et gérez vos annonces.
               </h1>
               <p className="text-white group-hover:text-black">
-                Envoyez des notifications et des rappels directement via la{" "}
-                <br />
-                messagerie pour vous assurer que personne ne manque une <br />
-                information importante.
+                Bénéficiez d'un espace dédié au offres d'emploi et autre
+                annonces. Ici vous trouverez une communauté ciblée et engagée
+                pour comprendre et s'adapter aux évolutions technologiques et
+                industrièlles des entreprises
               </p>
             </div>
 
