@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Nav from "./components/Nav";
-import Hiro from "./components/Hiro";
-import Partenaire from "./components/Partenaire";
-import Propos from "./components/Propos";
-import Choix from "./components/Choix";
-import Tarif from "./components/Tarif";
-import Action from "./components/Action";
-import Faq from "./components/Faq";
-import Fouter from "./components/Fouter";
+// import Nav from "./components/Nav";
+// import Hiro from "./components/Hiro";
+// import Partenaire from "./components/Partenaire";
+// import Propos from "./components/Propos";
+// import Choix from "./components/Choix";
+// import Tarif from "./components/Tarif";
+// import Action from "./components/Action";
+// import Faq from "./components/Faq";
+// import Fouter from "./components/Fouter";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

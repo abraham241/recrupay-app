@@ -39,11 +39,12 @@ export default function Home() {
       <div className=" pt-36 px-10 md:px20" id="home">
         <div>
           <h1 className="text-4xl md:text-5xl font-bold text-center">
-            Le logiciel qu’il vous faut pour <br />
-            gérer <span className="inline-block mb-2">vos</span>{" "}
+            On connecte les meilleurs
+            <br />
+            <span className="inline-block mb-2">employeurs</span> avec une{" "}
             {/* Ajout d'une marge en bas pour espacer */}
             <span className="text-green-800">
-              recrutements & <br /> formations
+              jeunesse curieuse & <br /> engagée.
             </span>
           </h1>
           <p className="text-center py-5">
@@ -223,6 +224,7 @@ export default function Home() {
           <p>
             Avec des fonctionnalités d’automatisation puissantes, telles que le
             tri automatique des CV et la gestion des formations en ligne,
+            <br />
             RecruPay vous offre des tableaux de bord et rapports détaillés
           </p>
         </div>
@@ -270,14 +272,15 @@ export default function Home() {
               <p>03</p>
             </div>
             <div className="text-xl font-bold py-2">
-              <h1>Collaboration améliorée</h1>
+              <h1>Accédez à notre communauté de jeune talents</h1>
             </div>
             <div>
               <p>
-                Favorisez la collaboration entre équipes avec des outils <br />
-                intégrés comme la messagerie instantanée et le partage de <br />
-                ressources pour une communication fluide au sein de
-                l'entreprise.
+                un nombre de candidats importants pour vos offres de stage,
+                alternance, ou premier emploi. une vaste communauté de jeunes
+                certifié pour vos offres d'emploi en rapport avec les
+                technologies et outils que vous utilisez en entreprise.
+                Renforcez vos équipes avec les meilleurs talents.
               </p>
             </div>
           </div>
